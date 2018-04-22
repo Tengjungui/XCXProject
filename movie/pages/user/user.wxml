@@ -1,0 +1,34 @@
+<view class="container"> 
+
+  <view class="user-info">
+    <image class="avatar" src="{{avatar}}"></image>
+    <text class="name">{{nickName}}</text> 
+    <text class="name">{{country}} {{province}} {{city}}</text>
+  </view>
+
+  <view class="share" bindtap="goShare">
+    <text>分享小程序</text>
+    <image class="more" src="/assets/image/more.png"></image>
+  </view>
+  
+  <view class="history" bindtap="historyMore">
+    <text>观看历史</text>
+    <image class="more" src="/assets/image/more.png"></image>
+  </view>
+
+  <view class="history-list" wx:if="{{movies.length>0}}">
+
+    <view class="movie-item" wx:for="{{movies}}" wx:key="{{item._id}}" bindtap="goDetail" data-movie-data="{{item}}">
+
+      <image class="poster" mode="widthFix" src="{{item.poster}}"></image>
+      <view class="text">
+        <text>{{item.title}} <text class="rate">{{item.rate}}</text></text>
+      </view>
+      <view class="info">
+        <text>{{item.types}} / {{item.year}}</text>
+      </view>
+    </view>
+
+  </view>
+
+</view>

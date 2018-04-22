@@ -1,0 +1,13 @@
+<!--pages/history-list/history-list.wxml-->
+<import src="/common/template/list.wxml" />
+
+<block wx:if="{{movies.length}}">
+  <template is="list" wx:if="{{movies.length}}" data="{{movies, loading}}" />
+</block>
+
+<block wx:else>
+  <view class="no-data">
+    <image src="/assets/image/no-data.png"></image>
+    <text>暂无观看历史记录！</text>
+  </view>
+</block>

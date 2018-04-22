@@ -1,0 +1,45 @@
+/* pages/detail/detail.wxss */
+.container video{
+  width: 100%;
+}
+.movie-content{
+  padding:20rpx 25rpx;
+}
+.movie-content view{
+  margin: 30rpx 0;
+}
+.title{
+  font-size: 50rpx;
+  font-weight: 700;
+  color:#333;
+}
+.type, .pubdate{
+  font-size: 28rpx;
+  color:#777;
+}
+.summary{
+  font-size: 30rpx;
+  color: #555;
+  line-height: 1.5em;
+}
+.tags{
+  margin-top:60rpx;
+  overflow: hidden;
+}
+.tags text{
+  padding:10rpx 14rpx;
+  border: 1px solid #ccc;
+  text-align: center;
+  border-radius: 2px;
+  margin: 10rpx;
+  font-size: 26rpx;
+  color: #666;
+  float:left;
+}
+
+.copy-info{
+  text-align: center;
+  font-size: 24rpx;
+  color:#888;
+  padding: 20rpx 0;
+}

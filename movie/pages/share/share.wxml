@@ -1,0 +1,5 @@
+<!--pages/share/share.wxml-->
+<view class="share-content">
+  <image src='{{shareImgUrl}}'></image>
+  <text>{{shareText}}</text>
+</view>

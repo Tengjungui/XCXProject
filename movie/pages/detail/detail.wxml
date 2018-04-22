@@ -1,0 +1,28 @@
+<!--pages/detail/detail.wxml-->
+<view class="container">
+
+  <video src="{{movieDetail.video}}" danmu-btn="true" poster="{{movieDetail.cover}}" controls></video>
+
+  <view class="movie-content">
+    <view class="title">
+      <text>{{movieDetail.raw_title}}</text>
+    </view>
+    <view class="type">
+      <text>{{movieDetail.rate}}分 / {{movieDetail.types}}</text>
+    </view>
+    <view class="pubdate">
+      上映时间：{{movieDetail.pubdate}}
+    </view>
+    <view class="summary">
+      {{movieDetail.summary}}
+    </view>
+    <view class="tags">
+      <text wx:for="{{movieDetail.tags}}" wx:key="{{index}}">{{item}}</text>
+    </view>
+  </view>
+
+</view>
+
+<view class="copy-info">
+  <text>{{copyright}}</text>
+</view>

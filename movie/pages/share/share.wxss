@@ -1,0 +1,21 @@
+/* pages/share/share.wxss */
+page{
+  height: 100%;
+}
+.share-content{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  padding:0 20rpx;
+}
+.share-content image{
+  width: 400rpx;
+  height: 400rpx;
+  margin-bottom: 30rpx;
+}
+.share-content text{
+  font-size: 32rpx;
+  color:#666;
+}

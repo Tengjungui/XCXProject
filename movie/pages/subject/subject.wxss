@@ -1,0 +1,26 @@
+/* pages/subject/index.wxss */
+.container{
+  padding:40rpx 25rpx;
+}
+.type-item{
+  position: relative;
+  border-radius:10rpx;
+  overflow: hidden;
+}
+.type-item +.type-item{ /*第二个起给.type-item加上margin-top: 20rpx; */
+  margin-top: 20rpx;
+}
+.type-img{
+   width: 100%;
+   height: 240rpx;
+   display: block;
+ }
+.type-title{
+  position: absolute;
+  left:30rpx;
+  bottom:20rpx;
+  font-size: 36rpx;
+  font-weight: 700;
+  color:#fff;
+  text-shadow: 2px 2px 5px #333;
+}
